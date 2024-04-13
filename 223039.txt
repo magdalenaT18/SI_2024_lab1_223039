@@ -1,0 +1,61 @@
+$ mkdir SI_2024_lab1_223039
+$ cd SI_2024_lab1_223039/
+$ git init
+$ nano REDME.md
+$ git add README.md
+$ git commit -m "Initial commit"
+$ nano SILAB1Main.java
+$ nano SILab1_1.java
+$ nano SILab1_2.java
+$ git add SILab1Main.java SILab1_1.java SILab1_2.java
+$ git commit -m "Add starter code"
+$ git log
+commit 5db8700180318ff61c449a33f391c4f44babaeee (HEAD -> master)
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:36:56 2024 +0200
+
+    Add starter code
+
+commit 071cf4cbbbb518b9619b408aebf65f20a738e4a3
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:04:00 2024 +0200
+
+    Initial commit
+$ git branch bug1
+$ git branch bug2
+$ git checkout bug1
+Switched to branch 'bug1'
+$ nano SILab1_1.java
+$ git add SILab1_1.java
+$ git commit --amend -m "Fix wrong condition in filterOddLengthStrings"
+$ git checkout bug2
+$ nano SILab1_2.java
+$ git add SILab1_2.java
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+$ git checkout bug1
+$ nano SILab1Main.java
+$ git add SILab1Main.java
+$ git commit -m "Call method filterOddLengthStrings in main class"
+$ git checkout bug2
+$ nano SILab1Main.java
+$ git add SILab1Main.java
+$ git commit -m " Call method makeBigStringFrom in main class"
+$ git fetch origin
+$ git checkout master
+$ git merge bug1
+Updating 5db8700..c857796
+Fast-forward
+ SILab1Main.java | 3 ++-
+ SILab1_1.java   | 2 +-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+$ git checkout bug2
+
+$ git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply ab23627...  Call method makeBigStringFrom in main class
+$ git rebase --continue
+$ git checkout master
+$ git merge bug2
+$ nano logs.txt
+$ nano 223039.txt

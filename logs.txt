@@ -1,0 +1,43 @@
+$ git log
+commit 54b607659b2dcb77fea4af354b4d308ba33790af (HEAD -> master)
+Merge: c857796 ab23627
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sun Apr 14 00:03:30 2024 +0200
+
+    а Call method makeBigStringFrom in main class
+
+commit ab236272fb6f86945ee673c9c1a8f3758f9c2f68 (bug2)
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:47:58 2024 +0200
+
+     Call method makeBigStringFrom in main class
+
+commit c857796697a02f05f9548fdd457ede6ac3021f01 (bug1)
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:46:21 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 1f68bc7dca6a0c80b1b0b46954830be3d1a52283
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:44:18 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 58f3794c7d71619ab4c900b6aed7ae08f3591795
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:38:45 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 5db8700180318ff61c449a33f391c4f44babaeee
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:36:56 2024 +0200
+
+    Add starter code
+
+commit 071cf4cbbbb518b9619b408aebf65f20a738e4a3
+Author: Magdalena Trajkova <magdalena.trajkova@students.finki.ukim.mk>
+Date:   Sat Apr 13 23:04:00 2024 +0200
+
+    Initial commit
